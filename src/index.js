@@ -115,10 +115,10 @@ function pitch(remainingRequest, prevRequest, dataInput) {
           eachCallback(statErr);
           return;
         }
-        if (stats.mtime.getTime() !== dep.mtime) {
-          eachCallback(true);
-          return;
-        }
+        // if (stats.mtime.getTime() !== dep.mtime) {
+        //   eachCallback(true);
+        //   return;
+        // }
         eachCallback();
       });
     }, (err) => {
